@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * check_cycle - Check if a linked list contains a cycle using Floyd's Tortoise and Hare algorithm
+ * check_cycle - Check if a linked list contains a cycle
  * @list: Pointer to the head of the linked list
  *
  * Return: 1 if the list contains a cycle, 0 if it doesn't
@@ -24,4 +24,3 @@ int check_cycle(listint_t *list)
 
 	return (0); // No cycle found
 }
-
