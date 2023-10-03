@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * check_cycle - Check if a linked list contains a cycle
- * @list: Pointer to the head of the linked list
+ * check_cycle - checks if a linked list contains a cycle
+ * @list: linked list to check
  *
- * Return: 1 if the list contains a cycle, 0 if it doesn't
+ * Return: 1 if the list has a cycle, 0 if it doesn't
  */
 int check_cycle(listint_t *list)
 {
@@ -19,8 +19,9 @@ int check_cycle(listint_t *list)
 		slow = slow->next;
 		fast = fast->next->next;
 		if (slow == fast)
-			return (1); // Cycle detected
+			return (1);
 	}
 
-	return (0); // No cycle found
+	return (0);
 }
+
