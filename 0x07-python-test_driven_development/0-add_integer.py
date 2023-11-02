@@ -1,24 +1,22 @@
 #!/usr/bin/python3
-# 0-add_integer.py
-"""Defines an integer addition function."""
+"""
+add_integer:
+    Checks if parameters are int
+    Returns sum of parameters
+"""
+
 
 def add_integer(a, b=98):
     """
-    Adds two integers.
-
-    Args:
-        a (int): The first integer.
-        b (int, optional): The second integer. Defaults to 98.
-
-    Returns:
-        int: The addition of a and b.
-
-    Raises:
-        TypeError: If a or b is not an integer or float.
+    Checks if int, otherwise return sum
     """
-    if not isinstance(a, (int, float)):
-        raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
-        raise TypeError("b must be an integer")
+    if type(a) == float or type(b) == float:
+        a = int(a)
+        b = int(b)
 
-    return int(a) + int(b)
+    if type(a) != int:
+        raise TypeError("a must be an integer")
+    elif type(b) != int:
+        raise TypeError("b must be an integer")
+    else:
+        return a + b
