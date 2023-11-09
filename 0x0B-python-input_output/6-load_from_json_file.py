@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """A module that contains the function 'load_from_json_file(...)'"""
 import json
