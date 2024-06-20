@@ -1,9 +1,4 @@
 #!/usr/bin/node
-// incrementAndCall.js
-function incrementAndCall(number, theFunction) {
-  number++;
-  theFunction(number);
-}
-
-module.exports = incrementAndCall;
-
+exports.addMeMaybe = function (number, theFunction) {
+  theFunction(++number);
+};
